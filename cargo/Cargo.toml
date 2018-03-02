@@ -8,7 +8,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 base64 = "~0.9.0"
-melo = { path="../melo", default-features = false }
+melo = { path="../../melo", default-features = false }
 stdweb = "~0.4.0"
 
 [patch.crates-io]
