@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Meloweb Test</title>
+    <meta charset="utf-8" />
+    <script src="meloweb.js"></script>
+    <script>
+    function exposeEverything()
+    {
+        Rust.meloweb.then(meloweb => window.meloweb = meloweb);
+    }
+    </script>
+</head>
+
+<body onload="exposeEverything();">
+    <h1>Meloweb Test</h1>
+    <p>
+        Use the console.
+    </p>
+</body>
+</html>
