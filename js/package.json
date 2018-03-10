@@ -1,0 +1,22 @@
+{
+  "name": "melo",
+  "version": "0.1.0",
+  "description": "Simple JS bindings for the Melo compiler.",
+  "main": "dist/melo.js",
+  "scripts": {
+    "test": "npm run build && mocha",
+    "refresh": "rm -rf wasm && rm -rf dist && mkdir wasm && mkdir dist",
+    "build-rust": "(cd ../cargo && cargo +nightly build --release --target wasm32-unknown-unknown) && cp ../cargo/target/wasm32-unknown-unknown/release/meloweb.wasm wasm",
+    "build-js": "webpack",
+    "build": "npm run refresh && npm run build-rust && npm run build-js"
+  },
+  "keywords": [],
+  "author": "Claire Harris <claire.harris.000@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^5.0.4",
+    "text-encoding": "^0.6.4",
+    "wasm-loader": "^1.3.0",
+    "webpack": "^3.10.0"
+  }
+}
