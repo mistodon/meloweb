@@ -1,0 +1,27 @@
+{
+  "name": "melo-ui",
+  "version": "0.1.0",
+  "description": "Simple web UI for the Melo compiler.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "refresh": "mkdir -p dist && rm -rf dist/* && cp -r static/* dist",
+    "debug": "npm run refresh && parcel index.html",
+    "release": "npm run refresh && parcel build index.html"
+  },
+  "keywords": [],
+  "author": "***Realname*** ***Lastname*** <***redacted.email@redacted.nope***>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "base64-js": "^1.2.3",
+    "hackmidi": "0.0.3",
+    "melo": "file:../js",
+    "parcel-bundler": "^1.6.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "dependencies": {}
+}
