@@ -34,7 +34,7 @@ class App extends React.Component {
       this.state.player.pause();
     }
     const bytes = toByteArray(this.state.outputBase64);
-    const player = await playerFromMIDIBuffer(bytes, "dist/samples/");
+    const player = await playerFromMIDIBuffer(bytes, this.props.samplesUrl);
     player.play();
     this.setState({ player });
   }
@@ -65,9 +65,9 @@ class App extends React.Component {
 }
 
 
-function initialize(domId) {
+function initialize(domId, samplesUrl) {
   var node = document.getElementById(domId);
-  ReactDOM.render(<App />, node);
+  ReactDOM.render(<App samplesUrl={ samplesUrl } />, node);
 }
 
 
