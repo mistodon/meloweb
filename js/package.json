@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run build && mocha",
     "refresh": "rm -rf wasm && rm -rf dist && mkdir wasm && mkdir dist",
-    "build-rust": "(cd ../cargo && cargo +nightly build --release --target wasm32-unknown-unknown) && cp ../cargo/target/wasm32-unknown-unknown/release/meloweb.wasm wasm",
+    "build-rust": "(cd ../cargo && cargo +nightly build --release --target wasm32-unknown-unknown) && wasm-gc ../cargo/target/wasm32-unknown-unknown/release/meloweb.wasm wasm/meloweb.wasm",
     "build-js": "webpack",
     "build": "npm run refresh && npm run build-rust && npm run build-js"
   },
