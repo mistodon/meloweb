@@ -1,5 +1,6 @@
 import meloweb from "../wasm/meloweb.wasm";
 import { TextEncoder, TextDecoder } from "text-encoding";
+// TODO(***realname***): Default to the browser native Text{Encoder, Decoder} as the above is gigantic.
 
 
 var loadedModule = null;
