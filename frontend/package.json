@@ -5,9 +5,10 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "refresh": "mkdir -p dist && rm -rf dist/* && cp -r static/* dist",
+    "refresh": "mkdir -p dist && rm -rf dist/* && cp -r static/* dist && npm run rebuild-api",
+    "rebuild-api": "(cd ../js && npm run release)",
     "debug": "npm run refresh && parcel index.html",
-    "release": "npm run refresh && parcel build index.html"
+    "release": "npm run refresh && node --max-old-space-size=8192 ./node_modules/.bin/parcel build index.html"
   },
   "keywords": [],
   "author": "***Realname*** ***Lastname*** <***redacted.email@redacted.nope***>",
