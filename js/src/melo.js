@@ -1,5 +1,5 @@
 import meloweb from "../wasm/meloweb.wasm";
-import { TextEncoder, TextDecoder } from "text-encoding";
+import { TextEncoder, TextDecoder } from "./utf8_PLATFORM";
 // TODO(claire): Default to the browser native Text{Encoder, Decoder} as the above is gigantic.
 
 
