@@ -11,7 +11,7 @@
     "release": "npm run refresh && node --max-old-space-size=8192 ./node_modules/.bin/parcel build index.html"
   },
   "keywords": [],
-  "author": "***Realname*** ***Lastname*** <***redacted.email@redacted.nope***>",
+  "author": "***Realname*** ***Lastname*** <***realname***.***lastname***.000@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-polyfill": "^6.26.0",

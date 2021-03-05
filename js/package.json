@@ -13,7 +13,7 @@
     "release": "npm run refresh && npm run build-rust && npm run build-js-release"
   },
   "keywords": [],
-  "author": "***Realname*** ***Lastname*** <***redacted.email@redacted.nope***>",
+  "author": "***Realname*** ***Lastname*** <***realname***.***lastname***.000@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "mocha": "^5.0.4",
