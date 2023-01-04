@@ -20,7 +20,7 @@
     "base64-js": "^1.2.3",
     "hackmidi": "0.0.3",
     "melo": "file:../js",
-    "parcel-bundler": "^1.6.2",
+    "parcel-bundler": "^1.12.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
